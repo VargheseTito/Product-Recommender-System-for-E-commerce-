@@ -3,7 +3,8 @@ Design and implement a personalized product recommendation system for an e-comme
 Objective: Enhance user experience through personalized suggestions using collaborative filtering or other relevant approaches
 Importance of Personalized Recommendations
 
-![image](https://github.com/VargheseTito/Product-Recommender-System-for-E-commerce-/assets/110298267/abf6824a-27b4-42f0-96d0-c98ac4e2e46b)
+![image](https://github.com/VargheseTito/Product-Recommender-System-for-E-commerce-/assets/110298267/537e392a-5eba-445b-9b8f-c0ec9c5a22ab)
+
 
 Enhancing User Experience:
 
@@ -45,6 +46,6 @@ Utilize collaborative filtering to enhance recommendations based on user behavio
 
 Handling Sparsity:
 Filtering users and products based on review frequency ensures relevance and reduces sparsity.
-Applying assumptions narrows down the dataset, focusing on prolific users and well-reviewed products![Uploading image.png…]()
+Applying assumptions narrows down the dataset, focusing on prolific users and well-reviewed products
 
 
