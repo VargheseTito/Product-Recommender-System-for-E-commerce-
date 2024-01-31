@@ -160,3 +160,46 @@ We will consider only those UserIds/ Reviewers as geniune users , who have atlea
 We will consider only those ProductsIds for buliding recommedation system, where the minimum number of atleast 2 reviews required per ProductId
 
 For the sake of similarity and to run the model quickly we will only consider users who have rated more than 100 times and products that were rated more than 2 times. Once we build our code structure and understand the flow we can run the same on the entire dataset.
+
+Evaluation and Benchmark Model:-
+
+
+RMSE-
+Based on our comparsion of different model on the basis of metric RMSE.
+
+The best model are as follows based on RMSE:- KNN>> NMF >> SVD
+
+MSE penalizes larger errors. It provides a measure of the model's ability to predict ratings accurately.
+
+ROC_AUC 
+
+![image](https://github.com/VargheseTito/Product-Recommender-System-for-E-commerce-/assets/110298267/2554db5a-568c-428f-8ab3-5206199ce9b4)
+
+
+The best model are as follows based on ROC-AUC METRIC:- NMF>> KNN >> SVD
+
+We see a tie btwn NMF and KNN.
+
+ROC-AUC metric indicates strong discriminatory power, meaning that the model has an excellent ability to correctly classify positive and negative instances.
+
+This high AUC score reflects the model's effectiveness in making accurate predictions and differentiating between relevant and non-relevant recommendations.
+
+Factors governing considerations of models to select to bulid our recommendation:
+
+Based on evaluation metrics both KNN and NMF are 2 best models.Inorder to select from these two models, we will look into below factors-
+
+Use Case and Audience:
+
+If the interpretability of recommendations is crucial for your use case or if your audience prefers transparency, kNN might be a better choice. If computational efficiency and scalability are more important, and the audience is more interested in accurate predictions than detailed explanations, NMF could be preferred.
+
+Complexity vs. Transparency Trade-off:
+
+kNN is conceptually simpler and more transparent, making it easier to understand and explain. It directly relies on user similarities for recommendations. NMF involves a more complex mathematical decomposition, and while it can capture intricate patterns, the interpretation of latent factors might be less intuitive.
+
+Data Characteristics:
+
+The choice between kNN and NMF can also depend on the nature of your data. If your dataset is relatively small and the relationships between users are well-defined, kNN might be a good fit. If you have a large dataset with sparse interactions, NMF might offer scalability benefits.
+
+Conclusion:-
+
+Factors such as scalability and capturing complex patterns are more critical for this recommendation engine, hence Non-Negative Matrix Factorization (NMF) could be a suitable alternative, even though it might be less immediately interpretable.
